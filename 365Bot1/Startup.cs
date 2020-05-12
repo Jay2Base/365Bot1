@@ -13,6 +13,8 @@ using Microsoft.Extensions.DependencyInjection;
 using _365Bot1.Bots;
 using Microsoft.Bot.Connector.Authentication;
 using Microsoft.Bot.Builder.BotFramework;
+using Microsoft.Bot.Builder.AI.QnA;
+
 
 namespace _365Bot1
 {
@@ -41,6 +43,15 @@ namespace _365Bot1
                 var appPassword = Configuration.GetSection("MicrosoftAppPassword").Value;
                 //options.CredentialProvider = new SimpleCredentialProvider(appId, appPassword);
                 options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
+            });
+
+            //create the QnA service
+            // Create QnAMaker endpoint as a singleton
+            services.AddSingleton(new QnAMakerEndpoint
+            {
+                KnowledgeBaseId = Configuration.GetValue<string>($"QnAKnowledgebaseId"),
+                EndpointKey = Configuration.GetValue<string>($"QnAAuthKey"),
+                Host = Configuration.GetValue<string>($"QnAEndpointHostName")
             });
 
         }
