@@ -1,0 +1,18 @@
+{
+    "name": "365Bot1",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "https://localhost:44319/api/messages",
+            "id": "1f9e06a0-8e1c-11ea-8525-d1ddb0cc271e",
+            "name": "https://localhost:44319/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "C:\\Users\\jayra\\OneDrive\\Documents\\365ThreeSixty\\Bot\\365Bot1\\365Bot1.bot"
+}
