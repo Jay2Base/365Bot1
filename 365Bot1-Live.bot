@@ -1,0 +1,26 @@
+{
+    "name": "365Bot1-Live",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "c08fc52d-fb14-4b00-bd2c-654f14d52743",
+            "appPassword": "365ThreeSixty123456!",
+            "endpoint": "https://365Bot-AppService.azurewebsites.net/api/messages",
+            "id": "c7ff9d40-8eee-11ea-bac2-05de4bb8c8d7",
+            "name": "https://365Bot-AppService.azurewebsites.net/api/messages"
+        },
+        {
+            "type": "abs",
+            "appId": "c08fc52d-fb14-4b00-bd2c-654f14d52743",
+            "id": "42",
+            "resourceGroup": "365Bot1-Group",
+            "serviceName": "c08fc52d-fb14-4b00-bd2c-654f14d52743",
+            "subscriptionId": "32b45065-28ec-4653-996c-2b31be459e4b"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "path": "C:\\Users\\jayra\\OneDrive\\Documents\\365ThreeSixty\\Bot\\365Bot1\\365Bot1-Live.bot",
+    "overrides": null
+}
